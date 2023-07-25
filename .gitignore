@@ -17,6 +17,7 @@ log/
 # ignore json files
 jsons/
 *.json
+utils/*.json
 
 # Distribution / packaging
 .Python

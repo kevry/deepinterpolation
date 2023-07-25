@@ -8,7 +8,8 @@ https://github.com/dlamay/deepinterpolation/tree/master
 ## Running Deepinterpolation inference
 
 1. Clone this repository to your localc SCC directory
-``git clone https://github.com/kevry/deepinterpolation.git``
+
+- ``git clone https://github.com/kevry/deepinterpolation.git``
 
 2.	Create a JSON file with an array of full paths to .mat files
 Open create_json.py 

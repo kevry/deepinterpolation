@@ -20,18 +20,20 @@ Modify the animal, project, session_list, and areas variables as needed.
 -	``python create_json.py``
   
 “Number of .mat files: X”
+
 This will create a JSON file named {animal}_files.json that contains the full paths of all the .mat files that fit the criteria you selected. The python script also prints the number of file paths in the JSON file.
 
 
 3. Next, open ``deep_interpolation_scc_CPU.sh``. This is the script used to run deep interpolation. The only thing to modify here is the length of the array (line 4). Change the length of the array to 1-(number of file paths in JSON file created/6). Round up if not an integer.
 
-4. Finally, open ``inference_CPU_SCC.py``. Modify lines below (line ~180 and down) accordingly. 
-•	jobdir = full path to deep interpolation folder on SCC
-•	json_file = name of JSON file created (include .json extension)
-•	model_path = name of .h5 (model) file. Current model is already in deepinterpolation folder (include .h5 extension)
-•	drive2select = select drive for where to save deep interpolation files (assuming all drives X/Y/W follow same file structure) (enter either “X:”, “Y:”, "V:", or “W:”)
+4. Finally, open ``inference_CPU_SCC.py``. Modify lines below (line ~180 and down) accordingly.
+- jobdir = full path to deep interpolation folder on SCC
+- json_file = name of JSON file created (include .json extension)
+- model_path = name of .h5 (model) file. Current model is already in deepinterpolation folder (include .h5 extension)
+- drive2select = select drive for where to save deep interpolation files (assuming all drives X/Y/W follow same file structure) (enter either “X:”, “Y:”, "V:", or “W:”)
 
-5.	To run deep interpolation now, run command on SCC: ``qsub deep_interpolation_scc_CPU.sh``
+
+6.	To run deep interpolation now, run command on SCC: ``qsub deep_interpolation_scc_CPU.sh``
 
 
 ## Utilities

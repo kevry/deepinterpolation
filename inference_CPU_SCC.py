@@ -175,7 +175,8 @@ if __name__ == "__main__":
     json_file = os.path.join(jobdir, "pr065_files.json")
 
     # file name of .h5 model to use for inference
-    model_path = os.path.join(jobdir, "2021_03_22_13_24_transfer_mean_squared_error_rigid_test_train_bad.h5")
+    # model_path = os.path.join(jobdir, "2021_03_22_13_24_transfer_mean_squared_error_rigid_test_train_bad.h5")
+    model_path = "/net/claustrum2/mnt/data/Projects/Perirhinal/deepinterpolation/trained_models/Training_models/2021_03_22_13_24_transfer_mean_squared_error_rigid_test_train_bad.h5"
 
     # select drive to write dp.mat files to
     ## note: make sure to have entire file structure read/similar on the drive selected

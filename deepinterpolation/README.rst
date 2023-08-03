@@ -8,7 +8,7 @@ Deep Interpolation
 
 Principle of Deep Interpolation
 ========================
-.. image:: /docs/principle.png
+.. image:: /deepinterpolation/docs/principle.png
     :alt: principle of deep interpolation
     :width: 100 px
 **Figure 1** - Schematic introducing the principles of deep interpolation.  **A**. An interpolation model is trained to predict a noisy block from other blocks with independent noise. The loss is the difference between the predicted data and a new noisy block. **B**. The interpolation model is used to create a noiseless version of the input data. 
